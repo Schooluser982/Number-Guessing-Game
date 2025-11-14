@@ -20,8 +20,7 @@
 
 	<!-- 🎵 Theme Music -->
 	<audio id="themeMusic" loop>
-		<source src="https://raw.githubusercontent.com/Schooluser982/Number-Guessing-Game/main/cinematic-corporate-theme-music-1-272625.mp3
-" type="audio/mpeg">
+		<source src="https://raw.githubusercontent.com/Schooluser982/Number-Guessing-Game/main/cinematic-corporate-theme-music-1-272625.mp3" type="audio/mpeg">
 		Your browser does not support the audio element.
 	</audio>
 	<br>
