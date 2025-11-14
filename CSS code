@@ -1,0 +1,115 @@
+/* General page styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  text-align: center;
+  padding: 50px;
+  color: #333;
+}
+
+/* Game container */
+h2 {
+  color: #222;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+p {
+  font-size: 18px;
+}
+
+/* Input field styling */
+#userGuess {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  width: 120px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+#userGuess:focus {
+  border-color: #2196F3;
+  box-shadow: 0 0 10px rgba(33,150,243,0.5);
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Result and attempts text */
+#result {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #ff5722;
+}
+
+#attempts {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Fun decal: glowing border around the game area */
+body::before {
+  content: "";
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border: 5px dashed rgba(255,255,255,0.6);
+  border-radius: 20px;
+  pointer-events: none;
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px #fff; }
+  to { box-shadow: 0 0 30px #ff9800; }
+}
+
+/* Reset button styling */
+#resetBtn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#resetBtn:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+/* Volume slider styling */
+#volumeControl {
+  width: 200px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 5px;
+}
